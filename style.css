@@ -1,3 +1,30 @@
+@media screen and (max-width: 500px){
+
+
+    header .menu li{
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    #content{
+
+        display: flex;
+        align-items: center;
+        
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+     
+
+    }
+
+} 
+
+
 body{
 
     min-height: 100vh;
@@ -5,8 +32,19 @@ body{
     background-image: url("doutor.jpg");
     background-size: cover;
     background-position: center;
+    min-width: 320px;
+    max-width: 1000px;
 
 }
+
+
+
+img{
+
+    width: 100%;
+
+}
+
 
 header{
     display: flex;
@@ -44,97 +82,104 @@ header{
 
 }
 
-a{
+    a{
 
-text-decoration: none;
-color: white;
-transition: 200ms;
-
-}
-
-header .menu li{
-
-
-    display: inline-block;
+        text-decoration: none;
+        color: white;
+        transition: 200ms;
 
 }
 
-header .menu a{
+    header .menu li{
 
-    display: inline-block;    
-    padding: 12px 12px;
+
+        display: inline-block;
+
+}
+
+    header .menu a{
+
+        display: inline-block;    
+        padding: 12px 12px;
    
     
 }
 
-#content{
+    #content{
 
-    display: flex;
-    color: white;
-    position: fixed;
-    width: 500px;
-    height: 200px;
-    margin-top: 400px;
-    margin-left: 150px;
-    border-left: 3px solid yellow;
-    align-items: center;   
-    transition: 200ms; 
+        display: flex;
+        color: white;
+        position: fixed;
+        width: 500px;
+        height: 200px;
+        margin-top: 400px;
+        margin-left: 150px;
+        border-left: 3px solid yellow;
+        align-items: center;   
     
 
 }
 
-.dc{
+    #dc{
 
-    margin-bottom: 150px;
-    position: fixed;
-    margin-left: 5px;
-    font-size: 26px;
-
-}
-
-p{
-
-    margin-left: 5px;
-    font-size: 17px;
+        margin-bottom: 150px;
+        position: fixed;
+        margin-left: 5px;
+        font-size: 26px;
 
 }
 
+    #pesquisar{
 
-#content:hover{
+        width: 30px;
+        height: 30px;
+        margin-left: 60px;
+        margin-bottom: 3px;
+        margin-top: 3px;
 
+}   
 
-transform: scale(1.1);
+    #titulo{
+
+        font-size: 40px;
+        color: white;
+        transition: 200ms;
 
 }
 
-a:hover{
+    p{
 
-    text-decoration: underline;
+        margin-left: 5px;
+        font-size: 17px;
 
-}
+    }
 
+    h3{
 
-
-h3{
-
-    margin-left: 12px;
+        margin-left: 12px;
     
-}
+    }
 
-#pesquisar{
 
-    width: 30px;
-    height: 30px;
-    margin-left: 60px;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    *::selection{
+
+        background-color: darkred;
+        color: white;
 
 }
-#titulo{
 
-    font-size: 40px;
-    color: white;
-    transition: 200ms;
+    #content:hover{
+
+
+        transform: scale(1.1);
+        transition: 1000ms;
+        border-bottom: 3px solid yellow;
+
+}
+
+    a:hover{
+
+        text-decoration: underline;
 
 }
 
